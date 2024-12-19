@@ -91,8 +91,8 @@ function draw() {
     text("and a Happy New Year", width*0.1, 350)
     textFont(font,getFontSize()-45);
     text("love from px cx sx xx", width*0.1, height-150)
-    textFont(font,getFontSize()-50);
-    text("if the trees are wonky refresh the page for new ones", width*0.1, height-50)
+    textFont(font,getFontSize()-60);
+    text("if the trees are wonky refresh the page", width*0.1, height-50)
 }
 
 function getFontSize() {
