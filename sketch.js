@@ -90,7 +90,7 @@ function draw() {
     textFont(font,getFontSize()-35);
     text("and a Happy New Year", width*0.1, 350)
     textFont(font,getFontSize()-75);
-    text("from pete, cathy & sam", width*0.7, height-50)
+    text("from pete, cathy, and sam", width*0.7, height-50)
     textFont(font,getFontSize()-60);
     text("if the trees are wonky refresh the page", width*0.1, height-50)
 }
