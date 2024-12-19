@@ -89,9 +89,9 @@ function draw() {
     text("Christmas", width*0.1, 250);
     textFont(font,getFontSize()-35);
     text("and a Happy New Year", width*0.1, 350)
-    textFont(font,getFontSize()-50);
-    text("from pete cathy and sam", width*0.7, height-150)
     textFont(font,getFontSize()-40);
+    text("from pete cathy and sam", width*0.7, height-150)
+    textFont(font,getFontSize()-50);
     text("if the trees are wonky refresh the page", width*0.1, height-50)
 }
 
