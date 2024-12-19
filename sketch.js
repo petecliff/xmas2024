@@ -20,9 +20,7 @@ function preload() {
 
 function setup() {
     createCanvas(windowWidth, windowHeight);
-
-    //happy = getFontOutlinePointsForWord("Happy");
-	//christmas = getFontOutlinePointsForWord("Christmas");
+    pixelDensity(1);
 
     gravity = createVector(0, 0.3);
 
@@ -76,8 +74,8 @@ function draw() {
         let xOff = flake.pos.x / width;
         let yOff = flake.pos.y / height;
         let wAngle = noise(xOff, yOff, zOff) * TWO_PI;
-        let wind = p5.Vector.fromAngle(wAngle);
-        wind.mult(0.1);
+        // let wind = p5.Vector.fromAngle(wAngle);
+        // wind.mult(0.1);
 
         flake.applyForce(gravity);
         //flake.applyForce(wind);
@@ -93,17 +91,6 @@ function draw() {
     text("and a Happy New Year", width*0.1, 350)
     textFont(font,getFontSize()-45);
     text("love from px cx sx xx", width*0.1, height-150)
-
-
-    // for (let point of happy) {	
-	// 	const posX = point.x;
-	// 	const posY = point.y;
-		
-	// 	circle(posX, posY, 2);
-	// 	// if (random(100) > 90) {
-	// 	// 	bigBubblePositions.push({x: posX, y: posY});
-	// 	// }
-	// }
 }
 
 function getFontSize() {
@@ -113,10 +100,3 @@ function getFontSize() {
     }
     return f;
 }
-
-// function getFontOutlinePointsForWord(word) {
-// 	return myFont.textToPoints(word, 55, height / 2, 220, {
-// 		sampleFactor: 0.3,
-// 		simplifyThreshold: 0
-// 	});
-// }

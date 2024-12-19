@@ -9,7 +9,6 @@ class Plant {
         this.angle = 0.1 * PI;
         this.xpos = width*xpos;
         this.ypos = height-ypos;
-        this.gen = 0;
         this.sWeight = 20;
     }
 
@@ -46,10 +45,6 @@ class Plant {
     }
 
     expand() {
-        // if (this.gen > 10) {
-        //     return;
-        // }
-        //this.gen++;
         let newStr = "";
         for(let i = 0; i < this.word.length; i++) {
             switch(this.word.charAt(i)) {
